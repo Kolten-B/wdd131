@@ -1,0 +1,38 @@
+/* temples-large.css - Larger Screen View */
+@media screen and (min-width: 768px) {
+    .temple-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns for larger view */
+      gap: 1rem; /* Adds space between images */
+      justify-items: center; /* Ensures images are centered within their grid items */
+    }
+  
+    .temple-gallery figure {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .temple-gallery img {
+      width: 90%;  /* Set the image width to be 90% of the container */
+      height: auto; /* Maintain aspect ratio */
+      max-height: 300px; /* Limit the height to prevent smooshing */
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  
+    .temple-gallery figcaption {
+      margin-top: 0.5rem;
+      padding: 0 1rem;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+  }
+  
+  
+  

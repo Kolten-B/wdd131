@@ -1,0 +1,123 @@
+/* temples.css - Mobile First */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #005f73;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: none; /* Hidden by default */
+  }
+  
+  nav .hamburger {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  main {
+    max-width: 100%;
+    margin: 1rem auto;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  
+  .temple-gallery figure {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .temple-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .temple-gallery figcaption {
+    margin-top: 0.5rem;
+    padding: 0 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Mobile View for Navigation */
+  @media (max-width: 767px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 1rem 0;
+      text-align: center;
+    }
+  
+    nav ul.show {
+      display: flex;
+    }
+  
+    nav ul li {
+      margin: 1rem 0;
+    }
+  
+    nav ul li a {
+      font-size: 1.2rem;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
+  /* Larger Screen View (Tablet and Desktop) */
+  @media (min-width: 768px) {
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 0 1rem;
+    }
+  
+    nav ul li a {
+      font-size: 1rem;
+      color: white;
+      text-decoration: none;
+    }
+  
+    nav .hamburger {
+      display: none;
+    }
+  }
+  
