@@ -1,0 +1,87 @@
+/* Global Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* General Styles */
+  body {
+    font-family: Roboto, helvetica, sans-serif;
+    margin: 1rem;
+    background-color: #f9f9f9; /* Subtle background for better contrast */
+    color: #333; /* Dark gray for readable text */
+  }
+  
+  /* Layout Container */
+  header,
+  main,
+  footer {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  
+  /* Header and Banner */
+  div.banner {
+    border: 1px solid #b2d4e6; /* Softer border */
+    padding: 1rem;
+    background-color: #eaf7fc; /* Light blue */
+    color: #005073; /* Deep blue for text */
+    font-weight: 700;
+    word-break: break-word;
+    text-align: center;
+    border-radius: 8px; /* Rounded corners for a modern look */
+  }
+  
+  h1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+    color: #2a4d69; /* Deep navy blue */
+  }
+  
+  /* Main Content Layout */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 200px; /* Two columns: content and sidebar */
+    grid-gap: 1.5rem;
+  }
+  
+  h2 {
+    color: #2a4d69; /* Same as header for consistency */
+    grid-column: 1/3; /* Span both columns */
+    margin-bottom: 0.5rem;
+  }
+  
+  h3 {
+    margin-bottom: 0.5rem;
+    color: #405d27; /* Forest green */
+  }
+  
+  section {
+    padding: 1rem;
+    background-color: #fff; /* White background for clarity */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Callout Section */
+  .callout {
+    border: 1px solid #c6c6c6;
+    color: #333; /* Neutral text */
+    background-color: #f4f4f4; /* Light gray for contrast */
+    grid-column: 1/3; /* Span both columns */
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    font-size: smaller;
+    color: #666; /* Subdued text */
+    text-align: center;
+  }
+  
