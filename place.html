@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scotland - Country Information</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>SCOTLAND</h1>
+            <img src="images/Scotland.jpg" alt="Scotland" class="hero-image">
+        </header>
+
+        <!-- Country Data Section -->
+        <section class="data-section">
+            <h2>Country Data</h2>
+            <ul>
+                <li>Capital: Edinburgh</li>
+                <li>Population: 5.4 Million</li>
+                <li>Language: English</li>
+                <li>Currency: Pound Sterling</li>
+                <li>Area: 77,910 km²</li>
+                <li>Time Zone: GMT</li>
+            </ul>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather-section">
+            <h2>Weather</h2>
+            <div class="weather-icon">⛅</div>
+            <ul>
+                <li>Temperature: 12°C</li>
+                <li>Humidity: 80%</li>
+                <li>Wind Speed: 18 km/h</li>
+                <li>Wind Chill: <span id="windChillValue">Loading...</span></li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Kolten Brown, Rigby, Idaho</p>
+        <p>Last modified: <span id="lastModifiedDate"></span></p>
+    </footer>
+</body>
+</html>

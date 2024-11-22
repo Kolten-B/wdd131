@@ -1,0 +1,167 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #52703d; 
+    text-align: center;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Country Data Section */
+.data-section {
+    background-color: #004d64; 
+    color: #fff;
+    padding: 20px;
+    border: 2px solid #004d64;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: left;
+    width: 100%;
+    max-width: 800px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    font-size: 1.2em;
+    text-align: left;
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+li {
+    padding: 5px 0;
+}
+
+/* Weather Section */
+.weather-section {
+    background-color: #ff6f61; 
+    color: #fff;
+    padding: 20px;
+    border: 2px solid #ff6f61;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: left;
+    width: 100%;
+    max-width: 800px;
+}
+
+.weather-icon {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.weather-section ul {
+    list-style: none;
+    font-size: 1.2em;
+    text-align: left;
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+.weather-section li {
+    padding: 5px 0;
+}
+
+/* Footer Section */
+footer {
+    font-size: 1em;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .hero-image {
+        max-width: 100%;
+    }
+
+    .data-section, .weather-section {
+        padding: 15px;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .weather-icon {
+        font-size: 2.5em;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .hero-image {
+        max-width: 100%;
+    }
+
+    .data-section, .weather-section {
+        padding: 10px;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .weather-icon {
+        font-size: 2em;
+    }
+}
