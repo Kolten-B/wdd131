@@ -147,8 +147,8 @@ const temples = [
     const smallTemples = temples.filter(temple => temple.area < 10000);
     displayTemples(smallTemples);
   });
-  
-  // Update year and last modified in footer
-  document.getElementById('year').textContent = new Date().getFullYear();
-  document.getElementById('modified').textContent = document.lastModified;
-  
+  // Set the current year
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// Set the last modified date of the document
+document.getElementById("last-modified").textContent = document.lastModified;
