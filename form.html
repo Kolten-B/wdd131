@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form method="GET" action="review.html">
+            <!-- Product Name Field -->
+            <label for="product">Product Name:</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product...</option>
+            </select>
+
+            <!-- Overall Rating Field -->
+            <fieldset>
+                <legend>Overall Rating:</legend>
+                <label><input type="radio" name="rating" value="1" required> 1 ★</label>
+                <label><input type="radio" name="rating" value="2"> 2 ★★</label>
+                <label><input type="radio" name="rating" value="3"> 3 ★★★</label>
+                <label><input type="radio" name="rating" value="4"> 4 ★★★★</label>
+                <label><input type="radio" name="rating" value="5"> 5 ★★★★★</label>
+            </fieldset>
+
+            <!-- Date of Installation Field -->
+            <label for="date">Date of Installation:</label>
+            <input type="date" id="date" name="date" required>
+
+            <!-- Useful Features Checkboxes -->
+            <fieldset>
+                <legend>Useful Features:</legend>
+                <label><input type="checkbox" name="feature" value="Feature1"> Feature 1</label>
+                <label><input type="checkbox" name="feature" value="Feature2"> Feature 2</label>
+                <label><input type="checkbox" name="feature" value="Feature3"> Feature 3</label>
+            </fieldset>
+
+            <!-- Written Review Field -->
+            <label for="review">Written Review:</label>
+            <textarea id="review" name="review"></textarea>
+
+            <!-- User Name Field -->
+            <label for="username">Your Name (Optional):</label>
+            <input type="text" id="username" name="username">
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
+
+    <!-- Link to JavaScript file -->
+    <script src="scripts/form.js"></script>
+</body>
+</html>
